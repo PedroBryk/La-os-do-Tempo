@@ -1,0 +1,13 @@
+.sobre__container{
+    display: flex;
+    align-items: start;
+    background-color: #efa49d;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.sobre__container-texto{
+    display: flex;
+    flex-direction: column;
+    
+}
