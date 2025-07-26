@@ -35,27 +35,7 @@
 }
 
 /* Responsivo para tablets (largura < 1024px) */
-@media (max-width: 1024px) {
-    .sobre__container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .sobre__container-texto {
-        max-width: 90%;
-    }
-
-    .sobre__container-texto-titulo h2 {
-        font-size: 1.5rem;
-    }
-
-    .sobre__container-texto-texto p {
-        font-size: 1rem;
-    }
-}
-
-/* Responsivo para celulares (largura < 600px) */
 @media (max-width: 600px) {
     .sobre__container {
         padding: 1rem;

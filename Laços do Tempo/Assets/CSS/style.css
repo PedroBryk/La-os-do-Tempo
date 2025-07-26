@@ -60,3 +60,37 @@ body{
 .btn-saiba-mais:hover {
   transform: scale(1.03);
 }
+
+.btn-saiba-mais.servico {
+  min-width: 300px; /* ou outro valor menor que 350px */
+  font-size: 16px;
+}
+
+.btn-saiba-mais.servico .btn-texto {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.btn-saiba-mais.servico .btn-icone {
+  padding: 8px;
+}
+
+/* Telas muito grandes (ex: desktops grandes ou TVs) */
+@media screen and (min-width: 1440px) {
+  .btn-saiba-mais {
+    min-width: 400px;
+    font-size: 20px;
+  }
+
+  .btn-texto {
+    font-size: 20px;
+    padding: 12px 16px;
+  }
+
+  .btn-icone {
+    padding: 12px;
+    font-size: 22px;
+  }
+}
+
+

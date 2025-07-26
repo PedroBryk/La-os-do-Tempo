@@ -1,0 +1,76 @@
+.acomodacoes__titulo{
+    display: flex;
+    background-color: #BFCFB6;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.acomodacoes__titulo-icone{
+    background-color: black;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.acomodacoes {
+    position: relative;
+    z-index: 1;
+    background-color: #BFCFB6;
+    padding-top: 80px; /* Evita que o conteúdo fique grudado nos cards */
+}
+
+@media screen and (max-width: 1024px) {
+  .acomodacoes__titulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .acomodacoes__titulo-icone {
+    padding: 0.8rem;
+  }
+
+  .acomodacoes__titulo-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .acomodacoes__titulo-texto p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .acomodacoes__titulo {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .acomodacoes__titulo-icone {
+    width: 80px;
+    height: 80px;
+    padding: 0.5rem;
+  }
+
+  .acomodacoes__titulo-texto h2 {
+    font-size: 1.4rem;
+  }
+
+  .acomodacoes__titulo-texto p {
+    font-size: 0.95rem;
+  }
+
+  .acomodacoes__titulo-texto h5 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .acomodacoes__titulo-icone img {
+  max-width: 100%;
+  height: auto;
+}
+}
