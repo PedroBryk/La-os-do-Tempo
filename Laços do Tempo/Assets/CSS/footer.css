@@ -1,0 +1,17 @@
+.footer_batangas{
+    font-family: "Batangas";
+    font-size: 1rem;
+}
+
+.footer_bebas{
+    font-family: "bebas";
+    font-size: 1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}

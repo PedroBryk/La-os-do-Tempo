@@ -16,7 +16,7 @@
 .contato__container{
     display: flex;
     align-items: center;
-    width: 30%;
+    
 }
 
 .contato__header-texto{
@@ -40,7 +40,7 @@ ul{
     list-style: none;
 }
 
-.active{
+.active_header{
     background-color: #BFCFB6;
     color: black;
     padding-left: 40px;
@@ -61,12 +61,100 @@ li:hover{
     font-weight: bold;
 }
 
+.hamburguer{
+    display: none;
+}
+
+.nav__mobile{
+    display: none;
+}
+
 .temporarily-disabled {
     background-color: transparent;
     color: inherit;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: normal;
+}
+
+/* Tablets (largura entre 768px e 1024px) */
+@media screen and (max-width: 1024px) {
+ .header__container-contato,
+nav {
+  display: none;
+}
+
+/* Logo menor */
+.header__container-logotipo img {
+  width: 80%;
+}
+
+/* Mostra ícone do menu hamburguer */
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Menu Mobile */
+.nav__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Quando ativo */
+.nav__mobile.ativo {
+  transform: translateY(0);
+}
+
+/* Lista de links */
+.nav__mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Botão de fechar */
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 1101;
+}
+
+.fechar img {
+  width: 30px;
+  height: 30px;
+}
+
+body.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
 }
 
 

@@ -1,23 +1,27 @@
-.acomodacoes__titulo{
-    display: flex;
-    background-color: #BFCFB6;
-    justify-content: space-between;
-    padding: 2rem;
-    gap: 3rem;
-}
-
-.acomodacoes__titulo-icone{
-    background-color: black;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-}
-
 .acomodacoes {
-    position: relative;
-    z-index: 1;
-    background-color: #BFCFB6;
-    padding-top: 80px; /* Evita que o conteúdo fique grudado nos cards */
+  position: relative;
+  z-index: 1;
+  background-color: #BFCFB6;
+  padding-top: 80px;
+}
+
+.acomodacoes__titulo {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #BFCFB6;
+}
+
+.acomodacoes__titulo-icone {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.carousel-item img {
+  filter: brightness(60%);
 }
 
 @media screen and (max-width: 1024px) {

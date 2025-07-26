@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/CSS/normalize.css">
     <link rel="stylesheet" href="./Assets/CSS/style.css">
@@ -14,12 +15,28 @@
     <link rel="stylesheet" href="./Assets/CSS/diferenciais.css">
     <link rel="stylesheet" href="./Assets/CSS/servicos.css">
     <link rel="stylesheet" href="./Assets/CSS/acomoodacoes.css">
+    <link rel="stylesheet" href="./Assets/CSS/localizacao.css">
+    <link rel="stylesheet" href="./Assets/CSS/contato.css">
+    <link rel="stylesheet" href="./Assets/CSS/footer.css">
     <title>Laços do Tempo | Home</title>
     <link rel="shortcut icon" href="./Assets/img/logotipo_header.svg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <section class="header__container">
+        <div id="navMobile" class="nav__mobile">
+            <div id="fechar" class="fechar">
+                <img src="./Assets/img/icones/fechar_icone.svg" alt="fechar">
+            </div>
+            <ul>
+                <li class="active_header">Home</li>
+                <li>Quem Somos</li>
+                <li>Nossos Serviços</li>
+                <li>Acomodações</li>
+                <li>Localização</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+        <section id="headerContainer" class="header__container">
             <div class="header__container-logotipo">
                 <img src="./Assets/img/logotipo_header.svg" alt="Logotipo Laços do Tempo">
             </div>
@@ -49,10 +66,13 @@
                     </div>
                 </div>
             </div>
+            <div id="hamburguer" class="hamburguer">
+                <img src="./Assets/img/icones/hamburguer.svg" alt="Menu Hamburguer">
+            </div>
         </section>
         <nav>
             <ul>
-                <li class="active">Home</li>
+                <li class="active_header">Home</li>
                 <li>Quem Somos</li>
                 <li>Nossos Serviços</li>
                 <li>Acomodações</li>
@@ -160,7 +180,7 @@
                     <img src="./Assets/img/icones/acomodacoes_icone.svg" alt="Icone de cadeira">
                 </div>
                 <div class="acomodacoes__titulo-texto">
-                    <h2 class="titulos_pagina_principal">CONHEÇA A NOSSA INSTITUIÇÃO DE LONGA PERMANÊNCIA PARA IDOSOS</h2>
+                    <h2 class="titulos_pagina_principal">Acomodações</h2>
                     <p class="textos_pagina_principal"><br>Pensadas para oferecer conforto, segurança e bem-estar, nossas acomodações são totalmente adaptadas às necessidades dos idosos, com estrutura funcional e acolhedora.<br>
 
                     <br>Contamos com quartos femininos e masculinos, todos com banheiros exclusivos e adaptados para acessibilidade, garantindo mais autonomia e segurança.<br>
@@ -173,9 +193,74 @@
                     <h5 class="textos_bold">Consulte a disponibilidade</h5>
                 </div>
             </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./Assets/img/acomodacoes_slides.jpg" class="d-block w-100" alt="Imagem com fotos das acomodações">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./Assets/img/acomodacoes_slides.jpg" class="d-block w-100" alt="Imagem com fotos das acomodações">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./Assets/img/acomodacoes_slides.jpg" class="d-block w-100" alt="Imagem com fotos das acomodações">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="localizacao__container">
+            <h2 class="titulos_pagina_principal white">Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.184376267764!2d-51.465087123913364!3d-25.398638177581798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef3628a011bc63%3A0x8289e749670f650!2sR.%20Frei%20Caneca%2C%202443%20-%20Trianon%2C%20Guarapuava%20-%20PR%2C%2085012-000!5e0!3m2!1spt-BR!2sbr!4v1753552225054!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="localizacao_icone">
+                    <img src="./Assets/img/icones/localizacao_grande_icone.svg" alt="Icone de localização">
+            </div>
+        </section>
+        <section class="contato__container-home">
+            <div class="contato__imagem-container">
+                <img src="./Assets/img/contato_container-imagem.jpg" alt="Idosa Feliz sorrindo">
+            </div>
+            <div class="contato__container-container">
+                <h2 class="titulos_pagina_principal">Entre em Contato</h2>
+                <div class="contato__container">
+                    <div class="contato__container-icone">
+                        <img src="./Assets/img/icones/telefone_header_icone.svg" alt="Icone de telefone">
+                    </div>
+                    <div class="contato__container-texto">
+                        <h2 class="contato__header-texto"><span class="DDD">42</span> 99801-8729</h2>
+                    </div>
+                </div>
+                <div class="contato__container">
+                    <div class="contato__container-icone">
+                        <img src="./Assets/img/icones/instagram_icone.svg" alt="Icone do Instagram">
+                    </div>
+                    <div class="contato__container-texto">
+                        <h2 class="contato__header-texto">lacosdotempo_ilpi</h2>
+                    </div>
+                </div>
+                <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" class="whatsapp-botao">
+                    <div class="whatsapp-icone">
+                        <img src="./Assets/img/icones/icone_whatsapp.svg" alt="Icone do Whatsapp">
+                    </div>
+                    <span class="whatsapp-texto">Fale agora pelo WhatsApp</span>
+                </a>
+            </div>
         </section>
     </main>
+    <footer>
+        <p class="footer_batangas">2025</p>
+        <img src="./Assets/img/logotipo_footer.svg" alt="logotipo laços do tempo">
+        <p class="footer_batangas">Todos os Direitos Reservados | </p>
+        <p class="footer_bebas">Criado e Desenvolvido por Electric</p>
+    </footer>
     <script src="./Assets/Js/nav.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script> 
 </body>
 </html>

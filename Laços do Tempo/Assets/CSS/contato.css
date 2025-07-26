@@ -1,0 +1,29 @@
+.contato__container-home {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #efa49d;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Container interno */
+.contato__container-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 🔸 Telas grandes (desktops acima de 1440px) */
+@media screen and (min-width: 1440px) {
+  .contato__container-home {
+    gap: 5rem;
+    padding: 4rem 6rem;
+    justify-content: center;
+  }
+
+  .contato__container-container {
+    gap: 2rem;
+  }
+}

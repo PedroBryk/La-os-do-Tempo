@@ -16,9 +16,20 @@ const navItems = document.querySelectorAll('nav ul li');
     });
   });
 
-const toggle = document.getElementById('menu-toggle');
-    const menu = document.querySelector('nav ul');
+const menu = document.getElementById('hamburguer');
+const fechar = document.getElementById('fechar');
+const navMobile = document.getElementById('navMobile');
+const headerContainer = document.getElementById('headerContainer');
 
-    toggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
+menu.onclick = function () {
+  navMobile.classList.add('ativo');
+  document.body.classList.add('no-scroll'); // ✅ trava o scroll
+  headerContainer.style.display = 'none';
+};
+
+fechar.onclick = function () {
+  navMobile.classList.remove('ativo');
+  document.body.classList.remove('no-scroll'); // ✅ libera o scroll
+  headerContainer.style.display = 'flex'; // ou 'block'
+};
+
