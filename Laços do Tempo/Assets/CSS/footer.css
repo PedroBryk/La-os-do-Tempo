@@ -15,3 +15,10 @@ footer{
     gap: 1rem;
     padding: 2rem;
 }
+
+@media screen and (max-width: 767px) {
+  footer{
+    flex-direction: column;
+    gap: 0;
+  }
+}

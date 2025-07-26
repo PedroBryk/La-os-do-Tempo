@@ -36,23 +36,18 @@
 
 /* Responsivo para tablets (largura < 1024px) */
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .sobre__container {
         padding: 1rem;
         gap: 1rem;
-    }
-
-    .btn-saiba-mais {
-        width: 100%;
+        text-align: center;
         justify-content: center;
+        align-items: center;
     }
 
-    .btn-texto {
-        font-size: 1rem;
+    .sobre__container-img img {
+    display: none;
+    
     }
-
-    .btn-icone {
-        width: 18px;
-        height: 18px;
-    }
+    
 }

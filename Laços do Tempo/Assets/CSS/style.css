@@ -132,13 +132,21 @@ body{
 
 @media screen and (max-width: 480px) {
   .whatsapp-botao {
-    flex-direction: column;
     text-align: center;
   }
 
   .whatsapp-texto {
     white-space: normal;
   }
+
+    .btn-saiba-mais {
+        width: 30%;
+        justify-content: center;
+    }
+}
+   
+
+  
 
 /* Telas muito grandes (ex: desktops grandes ou TVs) */
 @media screen and (min-width: 1440px) {
@@ -156,6 +164,4 @@ body{
     padding: 12px;
     font-size: 22px;
   }
-}
-
 }

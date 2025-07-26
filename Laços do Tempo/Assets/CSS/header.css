@@ -79,6 +79,10 @@ li:hover{
 
 /* Tablets (largura entre 768px e 1024px) */
 @media screen and (max-width: 1024px) {
+    .header__container{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+    }
+
  .header__container-contato,
 nav {
   display: none;

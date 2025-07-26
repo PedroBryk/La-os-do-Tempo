@@ -76,6 +76,15 @@
   .card__titulo {
     font-size: 28px;
   }
+
+  .sobre__container-icone{
+    display: none;
+}
+
+.nossos__servicos-titulo-container{
+    display: grid;
+    place-items: center;
+}
 }
 
 /* Celulares (largura até 767px) */

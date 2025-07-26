@@ -35,3 +35,9 @@
     align-items: center;
     color: white; /* Se quiser o texto branco para contraste */
 }
+
+@media screen and (max-width: 1024px) {
+  .diferenciais__container{
+    display: none;
+  }
+}

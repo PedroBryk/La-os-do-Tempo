@@ -24,6 +24,10 @@
   filter: brightness(60%);
 }
 
+.carrossel_mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .acomodacoes__titulo {
     flex-direction: column;
@@ -76,5 +80,13 @@
   .acomodacoes__titulo-icone img {
   max-width: 100%;
   height: auto;
+}
+
+.carrossel_mobile{
+    display: block;
+}
+
+.carrossel_desktop{
+    display: none;
 }
 }

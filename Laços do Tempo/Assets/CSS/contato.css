@@ -27,3 +27,13 @@
     gap: 2rem;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .contato__container-home {
+  flex-direction: column;
+}
+
+.contato__imagem-container{
+    display: none;
+}
+}
