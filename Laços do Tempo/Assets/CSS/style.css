@@ -14,6 +14,11 @@ body{
     font-family: "Batangas";
     font-weight: 700;
     font-size: 32px;
+    margin: 0;
+}
+
+.white{
+  color: #E6E3E1;
 }
 
 .textos_pagina_principal{

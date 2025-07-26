@@ -1,0 +1,15 @@
+.nossos__servicos-titulo-container{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nossos__servicos{
+    margin: 0;
+}
+
+.sobre__container-icone{
+    background-color: #BFCFB6;
+    padding: 10px;
+}

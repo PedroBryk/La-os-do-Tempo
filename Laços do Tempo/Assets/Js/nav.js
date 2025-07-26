@@ -16,14 +16,9 @@ const navItems = document.querySelectorAll('nav ul li');
     });
   });
 
-const toggleBtn = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu-nav');
-  const closeBtn = document.querySelector('.menu-close');
+const toggle = document.getElementById('menu-toggle');
+    const menu = document.querySelector('nav ul');
 
-  toggleBtn.addEventListener('click', () => {
-    menu.classList.add('show');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    menu.classList.remove('show');
-  });
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
