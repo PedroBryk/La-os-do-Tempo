@@ -1,6 +1,11 @@
 body{
     background-color: #E6E3E1;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+  padding-top: 180px;
 }
 
 @font-face {
@@ -28,59 +33,43 @@ body{
   color: #E6E3E1;
 }
 
+.black{
+  color: black;
+}
+
 .textos_pagina_principal{
     font-size: 16px;
     font-weight: 500;
 }
 
-.btn-saiba-mais {
+.btn-saiba-mais{
+  background-color: #F58075;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #fc7d72; /* Coral */
+  font-family: "Batangas";
+  color: #E6E3E1;
+  gap: 4rem;
+  font-size: 1.5rem;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
+  height: 50px;
   padding: 0;
-  font-family: 'Batangas', sans-serif;
-  min-width: 250px;
+  padding-left: 1rem;
+  margin: 0;
+  transition: transform 0.3s ease;
+
 }
 
-.btn-texto {
-  color: white;
-  font-weight: bold;
-  padding: 10px 10px;
-  font-size: 18px;
-  flex-grow: 1;
+.btn-icone{
+  background-color: #D9D9D9;
+  margin: 0;
+  padding: 0;
+  height: 50px;
 }
 
-.btn-icone {
-  background-color: #e1e1e1; /* Cinza claro */
-  padding: 10px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: black;
-}
-
-.btn-saiba-mais:hover {
-  transform: scale(1.03);
-}
-
-.btn-saiba-mais.servico {
-  min-width: 250px; /* ou outro valor menor que 350px */
-  font-size: 16px;
-}
-
-.btn-saiba-mais.servico .btn-texto {
-  font-size: 16px;
-  padding: 8px;
-}
-
-.btn-saiba-mais.servico .btn-icone {
-  padding: 8px;
+.btn-saiba-mais:hover{
+  transform: scale(1.1)
 }
 
 .whatsapp-botao {
@@ -116,7 +105,20 @@ body{
   white-space: nowrap;
 }
 
-/* Responsividade */
+a{
+  text-decoration: none;
+  color: #E6E3E1;
+  
+}
+
+@media screen and (max-width: 1024px){
+
+   main{
+    padding-top: 100px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .whatsapp-botao {
     font-size: 16px;
@@ -129,6 +131,8 @@ body{
   .whatsapp-texto {
     padding: 10px 12px;
   }
+
+ 
 }
 
 @media screen and (max-width: 480px) {
@@ -141,20 +145,8 @@ body{
   }
 }
 
-/* Telas muito grandes (ex: desktops grandes ou TVs) */
 @media screen and (min-width: 1440px) {
-  .btn-saiba-mais {
-    min-width: 400px;
-    font-size: 20px;
-  }
+  
 
-  .btn-texto {
-    font-size: 20px;
-    padding: 12px 16px;
-  }
-
-  .btn-icone {
-    padding: 12px;
-    font-size: 22px;
-  }
+ 
 }

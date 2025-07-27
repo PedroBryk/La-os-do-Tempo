@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./Assets/CSS/localizacao.css">
     <link rel="stylesheet" href="./Assets/CSS/contato.css">
     <link rel="stylesheet" href="./Assets/CSS/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <title>Laços do Tempo | Serviços</title>
     <link rel="shortcut icon" href="./Assets/img/logotipo_header.svg" type="image/x-icon">
 </head>
@@ -28,18 +29,20 @@
                 <img src="./Assets/img/icones/fechar_icone.svg" alt="fechar">
             </div>
             <ul>
-                <li>Home</li>
-                <li>Quem Somos</li>
-                <li class="active_header">Nossos Serviços</li>
-                <li>Acomodações</li>
-                <li>Localização</li>
-                <li>Contato</li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="sobre.html"><li>Quem Somos</li></a>
+                <a href="servicos.html" class="active_header"><li>Nossos Serviços</li></a>
+                <a href="index.html"><li>Acomodações</li></a>
+                <a href="index.html"><li>Localização</li></a>
+                <a href="#contato"><li>Contato</li></a>
             </ul>
         </div>
         <section id="headerContainer" class="header__container">
-            <div class="header__container-logotipo">
-                <img src="./Assets/img/logotipo_header.svg" alt="Logotipo Laços do Tempo">
-            </div>
+            <a href="index.html">
+                <div class="header__container-logotipo">
+                    <img src="./Assets/img/logotipo_header.svg" alt="Logotipo Laços do Tempo">
+                </div>
+            </a>
             <div class="header__container-contato">
                 <div class="contato__container">
                     <div class="contato__container-icone">
@@ -72,12 +75,12 @@
         </section>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Quem Somos</li>
-                <li class="active_header">Nossos Serviços</li>
-                <li>Acomodações</li>
-                <li>Localização</li>
-                <li>Contato</li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="sobre.html"><li>Quem Somos</li></a>
+                <a href="servicos.html" class="active_header"><li>Nossos Serviços</li></a>
+                <a href="index.html"><li>Acomodações</li></a>
+                <a href="index.html"><li>Localização</li></a>
+                <a href="#contato"><li>Contato</li></a>
             </ul>
         </nav>
     </header>
@@ -132,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="contato__container-home">
+        <section class="contato__container-home" id="contato">
             <div class="contato__imagem-container">
                 <img src="./Assets/img/contato_container-imagem.jpg" alt="Idosa Feliz sorrindo">
             </div>
@@ -151,7 +154,7 @@
                         <img src="./Assets/img/icones/instagram_icone.svg" alt="Icone do Instagram">
                     </div>
                     <div class="contato__container-texto">
-                        <h2 class="contato__header-texto">lacosdotempo_ilpi</h2>
+                        <a href="https://www.instagram.com/lacosdotempo_ilpi/"><h2 class="contato__header-texto black">lacosdotempo_ilpi</h2></a>
                     </div>
                 </div>
                 <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank" class="whatsapp-botao">
@@ -171,6 +174,7 @@
     </footer>
     </main>
     <script src="./Assets/Js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </body>

@@ -69,5 +69,14 @@
     .quem__somos__explicados-container{
     flex-direction: column;
 }
+
+.quem__somos__icones{
+    display: none;
+}
+
+.quem__somos__explicados-container{
+    text-align: center;
+    padding: 2.5rem;
+}
     
 }
