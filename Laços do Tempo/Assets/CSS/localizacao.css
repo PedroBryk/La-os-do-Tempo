@@ -7,12 +7,24 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
+.mapa_mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .localizacao__container{
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
     
+  }
+
+  .mapa_desktop{
+    display: none;
+  }
+
+  .mapa_mobile{
+    display: block;
   }
 
   .localizacao_icone{

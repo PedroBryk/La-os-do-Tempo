@@ -34,6 +34,22 @@
     margin-top: 1.5rem;
 }
 
+.quem__somos__explicados-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 6rem;
+}
+
+.quem__somos__icones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efa49d;
+    padding: 2rem;
+}
+
 /* Responsivo para tablets (largura < 1024px) */
 
 @media (max-width: 1024px) {
@@ -49,5 +65,9 @@
     display: none;
     
     }
+
+    .quem__somos__explicados-container{
+    flex-direction: column;
+}
     
 }

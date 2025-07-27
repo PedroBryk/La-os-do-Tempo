@@ -43,6 +43,28 @@
     font-size: 32px;
 }
 
+.servicos__explicados-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.servicos__explicados-servicos{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.servicos__explicados-servicos-icone{
+  background-color: #efa49d;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
 /* Telas maiores (ex: desktops grandes ou TVs) */
 @media screen and (min-width: 1440px) {
   .nossos__servicos-cards {
@@ -113,4 +135,14 @@
   .sobre__container-icone {
     padding: 5px;
   }
+
+  .servicos__explicados-servicos{
+  flex-direction: column;
+}
+
+.servicos__explicados-container{
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
 }

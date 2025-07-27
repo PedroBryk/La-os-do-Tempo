@@ -29,7 +29,8 @@ body{
 }
 
 .textos_pagina_principal{
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .btn-saiba-mais {
@@ -43,7 +44,7 @@ body{
   cursor: pointer;
   padding: 0;
   font-family: 'Batangas', sans-serif;
-  min-width: 350px;
+  min-width: 250px;
 }
 
 .btn-texto {
@@ -69,7 +70,7 @@ body{
 }
 
 .btn-saiba-mais.servico {
-  min-width: 300px; /* ou outro valor menor que 350px */
+  min-width: 250px; /* ou outro valor menor que 350px */
   font-size: 16px;
 }
 
@@ -138,15 +139,7 @@ body{
   .whatsapp-texto {
     white-space: normal;
   }
-
-    .btn-saiba-mais {
-        width: 30%;
-        justify-content: center;
-    }
 }
-   
-
-  
 
 /* Telas muito grandes (ex: desktops grandes ou TVs) */
 @media screen and (min-width: 1440px) {
