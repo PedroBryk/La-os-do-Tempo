@@ -33,5 +33,4 @@ fechar.onclick = function () {
   headerContainer.style.display = 'flex'; // ou 'block'
 };
 
-AOS.init();
 

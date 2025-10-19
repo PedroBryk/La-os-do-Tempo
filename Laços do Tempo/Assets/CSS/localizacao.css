@@ -5,10 +5,16 @@
     align-items: center;
     padding: 3rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    color: #ffff;
 }
 
 .mapa_mobile{
     display: none;
+}
+
+.textos_pagina_principal_localizacao_branco{
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -30,4 +36,8 @@
   .localizacao_icone{
     display: none;
   }
+
+.textos_pagina_principal_localizacao_branco{
+  display: block;
+}
 }

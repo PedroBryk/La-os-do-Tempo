@@ -93,6 +93,7 @@
 
   .nossos__servicos-card {
     width: 80%;
+
   }
 
   .card__titulo {
@@ -143,6 +144,7 @@
 .servicos__explicados-container{
   padding: 1rem;
   margin-top: 1rem;
+  
 }
 
 }

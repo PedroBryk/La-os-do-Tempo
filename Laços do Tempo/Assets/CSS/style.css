@@ -1,7 +1,7 @@
 body{
-    background-color: #E6E3E1;
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+  background-color: #E6E3E1;
+  font-family: "Poppins", sans-serif;
+    
 }
 
 main{
@@ -49,7 +49,7 @@ main{
   align-items: center;
   font-family: "Batangas";
   color: #E6E3E1;
-  gap: 4rem;
+  gap: 3rem;
   font-size: 1.5rem;
   border: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10);
@@ -115,6 +115,11 @@ a{
 
    main{
     padding-top: 100px;
+  }
+
+  .btn-saiba-mais{
+    font-size: 20px;
+    gap: 2rem;
   }
 
 }

@@ -56,9 +56,7 @@
     .sobre__container {
         padding: 1rem;
         gap: 1rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        
     }
 
     .sobre__container-img img {
@@ -75,7 +73,7 @@
 }
 
 .quem__somos__explicados-container{
-    text-align: center;
+    
     padding: 2.5rem;
 }
     
